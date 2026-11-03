@@ -37,7 +37,7 @@ PARAMS = ["cutting_speed", "cutting_depth", "feed_rate"]
 
 
 def trial_number(value: object) -> int:
-    match = re.search(r"(\\d+)", str(value))
+    match = re.search(r"(\d+)", str(value))
     if not match:
         raise ValueError(f"Could not extract trial number from identifier: {value}")
     return int(match.group(1))
