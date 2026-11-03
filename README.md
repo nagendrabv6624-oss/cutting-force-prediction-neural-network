@@ -53,7 +53,7 @@ The following metrics were produced by executing the training pipeline on the th
 | Ridge Regression | 155.79 | 14.59 | 0.307 |
 | **Random Forest** | **76.96** | **10.47** | **0.680** |
 
-**Finding:** Random Forest was the best-performing model in this experiment. The MLP was trained, but did not outperform the Random Forest. The comparison is reported transparently rather than presenting the neural network as the winner.
+![Five-fold cross-validation model comparison](outputs/model_comparison_cv.svg)\n\n**Finding:** Random Forest was the best-performing model in this experiment. The MLP was trained, but did not outperform the Random Forest. The comparison is reported transparently rather than presenting the neural network as the winner.
 
 Per-target metrics and run details are in [outputs/metrics.json](outputs/metrics.json). Holdout predictions from the MLP are in [outputs/holdout_predictions.csv](outputs/holdout_predictions.csv).
 
