@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" role="img" aria-labelledby="title desc">
+<title id="title">Five-fold cross-validation model comparison</title>
+<desc id="desc">Mean MAE: MLP 173.83, Ridge Regression 155.79, Random Forest 76.96. Lower is better.</desc>
+<rect width="900" height="390" fill="#ffffff"/>
+<text x="42" y="48" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172033">Five-fold cross-validation</text>
+<text x="42" y="78" font-family="Arial,sans-serif" font-size="15" fill="#596579">Mean MAE — lower is better</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="#263247">
+<text x="42" y="145">MLP neural network</text>
+<text x="42" y="225">Ridge Regression</text>
+<text x="42" y="305">Random Forest</text>
+</g>
+<g>
+<rect x="255" y="116" width="470" height="42" rx="7" fill="#8aa5c7"/>
+<rect x="255" y="196" width="421" height="42" rx="7" fill="#8aa5c7"/>
+<rect x="255" y="276" width="208" height="42" rx="7" fill="#23866d"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#172033">
+<text x="738" y="144">173.83</text>
+<text x="689" y="224">155.79</text>
+<text x="476" y="304">76.96</text>
+</g>
+<line x1="255" y1="340" x2="725" y2="340" stroke="#b8c1ce" stroke-width="1"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="#596579">
+<text x="255" y="363" text-anchor="middle">0</text>
+<text x="490" y="363" text-anchor="middle">87</text>
+<text x="725" y="363" text-anchor="middle">174</text>
+</g>
+</svg>
