@@ -1,0 +1,105 @@
+{
+  "dataset": {
+    "trials": 100,
+    "sound_features": 260,
+    "cutting_parameters": 3,
+    "targets": [
+      "Ft",
+      "Fr",
+      "Fa"
+    ],
+    "train_rows": 80,
+    "test_rows": 20,
+    "split": "80/20 random holdout, random_state=42",
+    "note": "Cutting parameters have no trial ID and are aligned by supplied row order."
+  },
+  "holdout_test": {
+    "neural_network": {
+      "MAE_average": 156.76603245491899,
+      "RMSE_average": 239.34945208601127,
+      "R2_uniform_average": 0.3362923820296128,
+      "per_target": {
+        "Ft": {
+          "MAE": 316.19025906937793,
+          "RMSE": 378.648160350485,
+          "R2": 0.38207241824683047
+        },
+        "Fr": {
+          "MAE": 19.390923174945158,
+          "RMSE": 22.940512407230703,
+          "R2": 0.33670219746876673
+        },
+        "Fa": {
+          "MAE": 134.71691512043395,
+          "RMSE": 167.22375487743523,
+          "R2": 0.2901025303732413
+        }
+      }
+    },
+    "ridge_baseline": {
+      "MAE_average": 160.08463808090698,
+      "RMSE_average": 248.8861326866081,
+      "R2_uniform_average": 0.3733881124627329,
+      "per_target": {
+        "Ft": {
+          "MAE": 329.33042045127166,
+          "RMSE": 400.4338818378163,
+          "R2": 0.30892129154639825
+        },
+        "Fr": {
+          "MAE": 18.169921077720588,
+          "RMSE": 20.944740761969854,
+          "R2": 0.44709271929252015
+        },
+        "Fa": {
+          "MAE": 132.7535727137287,
+          "RMSE": 158.26226727113237,
+          "R2": 0.36415032654928026
+        }
+      }
+    },
+    "random_forest": {
+      "MAE_average": 90.77742915140418,
+      "RMSE_average": 140.88110581563575,
+      "R2_uniform_average": 0.6811458579657491,
+      "per_target": {
+        "Ft": {
+          "MAE": 190.4087163003663,
+          "RMSE": 226.55313282540146,
+          "R2": 0.7787893547257561
+        },
+        "Fr": {
+          "MAE": 17.863425345950343,
+          "RMSE": 20.65282770592223,
+          "R2": 0.4623973831304006
+        },
+        "Fa": {
+          "MAE": 64.06014580789581,
+          "RMSE": 88.2586915960948,
+          "R2": 0.8022508360410909
+        }
+      }
+    }
+  },
+  "five_fold_cross_validation": {
+    "neural_network": {
+      "5_fold_MAE_mean": 173.8251947396173,
+      "5_fold_MAE_std": 21.606805035435368,
+      "5_fold_R2_mean": 0.0841036416747798,
+      "5_fold_R2_std": 0.162212335541565
+    },
+    "ridge_baseline": {
+      "5_fold_MAE_mean": 155.78723821554115,
+      "5_fold_MAE_std": 14.586300982807462,
+      "5_fold_R2_mean": 0.3066052692755547,
+      "5_fold_R2_std": 0.04138399232315435
+    },
+    "random_forest": {
+      "5_fold_MAE_mean": 76.96326733926568,
+      "5_fold_MAE_std": 10.472377477193143,
+      "5_fold_R2_mean": 0.6798923973691509,
+      "5_fold_R2_std": 0.021679838874922815
+    }
+  },
+  "best_model_by_cv_mae": "random_forest"
+}
